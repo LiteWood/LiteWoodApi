@@ -7,7 +7,7 @@ Provide real-time update Hitokoto Sentence script for HTML static web pages
 
 ## Requirements
 
-1.Get A [Hitokoto Senten](https://v1.hitokoto.cn/?encode=text)
+1.Get A [Hitokoto Sentence](https://v1.hitokoto.cn/?encode=text)
 
 2.Output Script:" document.write('获取的语句');"
 
