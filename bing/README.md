@@ -24,6 +24,15 @@
 http://img.lt5d.cn/bing
 ```
 
+## 变量
+
+| 变量名 | 用法 | 用法 |
+| :----: | :--: | :----: |
+| day | 设定 $day 天前的图片<br />默认day=0 | 今天:day=0<br />昨天:day=1<br />前天:day=2<br />明天:day=-1（仅在当天16点后有效） |
+
+
+
+
 ## 语言
 
 PHP : 100%
@@ -44,7 +53,7 @@ PHP : 100%
 
 ### Q：你为什么要用中国版必应而不是国际版必应?
 
-### A：The Background Of Chinese Bing Is Newer Than the international version. If you want to synchronize the background image with the international version of Bing, you can use 
+### A：中国版的背景图片会比国际版提前一天。如果你想使背景图与国际版同步, 你可以使用以下网址 
 
 ```html
 http://api.lt5d.cn/bing?day=1

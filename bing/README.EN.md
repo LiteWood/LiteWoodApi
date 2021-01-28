@@ -1,5 +1,5 @@
 English  |  [简体中文](./README.md)
-# [**Hitokoto**](https://hitokoto.cn/)
+# [Bing Background](https://cn.bing.com)
 
 ## Introduction
 
