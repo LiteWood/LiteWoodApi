@@ -1,10 +1,13 @@
 <?php
-function b() {
-    $ago = '0'; // 设定图片的时间(几天前，整数，0为今天，1为昨天，2为前天,-1为明天,仅当日16时后有效)
-    //非专业用户，请不要更改以下文本
-	$data = json_decode(file_get_contents('https://cn.bing.com/HPImageArchive.aspx?format=js&idx=$ago&n=1'), true); // 从 Bing 获取日图 JSON
-    	return "https://cn.bing.com".$data['images'][0]['url']; // 返回 URL
-};
-$url = b(); 
-header("Location:$url"); // 302 跳转
+$ago = $_GET["day"];// Picture Time(Today:0，Yesterday:1，The Day Before Yesterday : 2 , NextDay : -1,Valid only after 16:00 on the same day)
+if($ago=='')
+	$ago=0;
+$jsona = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx='.$ago.'&n=1';
+function imgsrc($day)////Get The URL
+{
+	$data = json_decode(file_get_contents('https://cn.bing.com/HPImageArchive.aspx?format=js&idx='.$day.'&n=1'), true); // Get JSON From Bing
+	return "https://cn.bing.com".$data['images'][0]['url'];//Return The URL
+}
+$url = imgsrc($ago);
+header("Location:$url");//Redirect To The Picture
 ?>
