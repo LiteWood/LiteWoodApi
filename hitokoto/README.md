@@ -1,4 +1,4 @@
-[English](./README.md) |  简体中文
+[English](./README.EN.md) |  简体中文
 
 # [**一言 Hitokoto**](https://hitokoto.cn/)
 
